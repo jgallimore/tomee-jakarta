@@ -306,9 +306,9 @@
             <artifactId>groovy-maven-plugin</artifactId>
             <dependencies>
               <dependency>
-                <groupId>org.apache.tomee</groupId>
-                <artifactId>javaee-api</artifactId>
-                <version>${version.javaee-api}</version>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-api</artifactId>
+                <version>9.1.0-RC1</version>
               </dependency>
               <dependency>
                 <groupId>org.apache.tomee.bom</groupId>
@@ -609,9 +609,9 @@
             <artifactId>groovy-maven-plugin</artifactId>
             <dependencies>
               <dependency>
-                <groupId>org.apache.tomee</groupId>
-                <artifactId>javaee-api</artifactId>
-                <version>${version.javaee-api}</version>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-api</artifactId>
+                <version>9.1.0-RC1</version>
               </dependency>
               <dependency>
                 <groupId>org.apache.tomee.bom</groupId>

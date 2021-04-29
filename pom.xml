@@ -122,6 +122,9 @@
     <version.xalan>2.7.2</version.xalan>
     <xbeanVersion>4.14</xbeanVersion>
 
+    <version.arquillian>1.1.13.Final</version.arquillian>
+    <version.shrinkwrap.descriptor>2.0.0</version.shrinkwrap.descriptor>
+
     <webprofile.work-dir>${project.build.directory}/webprofile-work-dir</webprofile.work-dir>
     <plus.work-dir>${project.build.directory}/plus-work-dir</plus.work-dir>
     <plume.work-dir>${project.build.directory}/plume-work-dir</plume.work-dir>
@@ -132,6 +135,7 @@
     <module>boms</module>
     <module>tomee</module>
     <module>transform</module>
+    <module>tck</module>
   </modules>
 
   <dependencyManagement>
@@ -140,6 +144,11 @@
         <groupId>org.apache.tomee.bom</groupId>
         <artifactId>jaxb-runtime</artifactId>
         <version>${tomee.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.platform</groupId>
+        <artifactId>jakarta.jakartaee-api</artifactId>
+        <version>9.1.0-RC1</version>
       </dependency>
       <dependency>
         <groupId>${project.groupId}</groupId>
