@@ -132,9 +132,10 @@
   </properties>
 
   <modules>
-    <module>boms</module>
-    <module>tomee</module>
     <module>transform</module>
+    <module>boms</module>
+    <module>bval-jsr</module>
+    <module>tomee</module>
     <module>arquillian</module>
     <module>tck</module>
   </modules>
