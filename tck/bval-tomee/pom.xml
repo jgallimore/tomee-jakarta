@@ -37,6 +37,7 @@
       <artifactId>tck-common</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
+      <classifier>transformed</classifier>
       <exclusions>
         <exclusion>
           <groupId>org.jboss.test-harness</groupId>
@@ -51,6 +52,12 @@
       <version>${project.version}</version>
       <classifier>plume</classifier>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
@@ -60,8 +67,8 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>arquillian-tomee-remote</artifactId>
-      <version>${tomee.version}</version>
-      <classifier>jakarta</classifier>
+      <version>${project.version}</version>
+      <classifier>transformed</classifier>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -74,6 +81,10 @@
         </exclusion>
         <exclusion>
           <groupId>org.jboss.arquillian.protocol</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.tomee</groupId>
           <artifactId>*</artifactId>
         </exclusion>
       </exclusions>

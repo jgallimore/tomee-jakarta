@@ -28,5 +28,6 @@
 
     <modules>
         <module>arquillian-tomee-embedded</module>
+        <module>arquillian-tomee-remote</module>
     </modules>
 </project>
