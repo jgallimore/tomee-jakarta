@@ -46,16 +46,10 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>openejb-core</artifactId>
-      <version>${project.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
       <artifactId>apache-tomee</artifactId>
       <type>zip</type>
       <version>${project.version}</version>
-      <classifier>webprofile</classifier>
+      <classifier>plume</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -66,7 +60,8 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>arquillian-tomee-remote</artifactId>
-      <version>${project.version}</version>
+      <version>${tomee.version}</version>
+      <classifier>jakarta</classifier>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -77,10 +72,14 @@
           <groupId>org.jboss.shrinkwrap.descriptors</groupId>
           <artifactId>*</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>org.jboss.arquillian.protocol</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.hibernate.beanvalidation.tck</groupId>
+      <groupId>jakarta.validation</groupId>
       <artifactId>beanvalidation-tck-tests</artifactId>
       <version>${bval-tck.version}</version>
       <scope>test</scope>
@@ -93,8 +92,8 @@
     </dependency>
     <dependency>
       <groupId>org.jboss.arquillian.protocol</groupId>
-      <artifactId>arquillian-protocol-servlet</artifactId>
-      <version>${version.arquillian}</version>
+      <artifactId>arquillian-protocol-servlet-jakarta</artifactId>
+      <version>1.7.0.Alpha9</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -132,7 +131,7 @@
               <stripVersion>true</stripVersion>
               <artifactItems>
                 <artifactItem>
-                  <groupId>org.hibernate.beanvalidation.tck</groupId>
+                  <groupId>jakarta.validation</groupId>
                   <artifactId>beanvalidation-tck-tests</artifactId>
                   <type>xml</type>
                   <classifier>suite</classifier>

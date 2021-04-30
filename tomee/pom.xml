@@ -41,7 +41,6 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <modules>
-        <module>openejb-core</module>
         <module>tomee-webprofile-webapp</module>
         <module>tomee-microprofile-webapp</module>
         <module>tomee-plus-webapp</module>

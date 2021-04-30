@@ -135,6 +135,7 @@
     <module>boms</module>
     <module>tomee</module>
     <module>transform</module>
+    <module>arquillian</module>
     <module>tck</module>
   </modules>
 

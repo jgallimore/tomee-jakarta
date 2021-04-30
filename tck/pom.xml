@@ -27,22 +27,15 @@
   <name>TomEE :: TCK</name>
 
   <properties>
-    <cdi.tck.30.version>3.0.1</cdi.tck.30.version>
-    <cdi-tck.version>${cdi.tck.30.version}</cdi-tck.version>
-
-    <bval-tck.version>2.0.6</bval-tck.version>
+    <bval-tck.version>3.0.0</bval-tck.version>
     <validation.provider>org.apache.bval.jsr.ApacheValidationProvider</validation.provider>
   </properties>
 
   <modules>
     <module>tck-common</module>
-    <module>cdi-embedded</module>
-    <module>cdi-tomee</module>
-    <module>cdi-signature-test</module>
-    <!--<module>bval-embedded</module>
+    <module>bval-embedded</module>
     <module>bval-tomee</module>
     <module>bval-signature-test</module>
-    <module>microprofile-tck</module>-->
   </modules>
 
   <repositories>

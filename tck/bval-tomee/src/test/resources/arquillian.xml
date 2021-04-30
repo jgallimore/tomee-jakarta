@@ -31,6 +31,10 @@
       <property name="dir">target/tomee-tck</property>
       <property name="appWorkingDir">target/tck-workdir</property>
       <property name="simpleLog">true</property>
+      <property name="version">9.0.0-M7-SNAPSHOT</property>
+      <property name="classifier">plume</property>
+      <property name="debug">false</property>
+      <property name="arquillianProtocol">Servlet 5.0</property>
       <property name="properties">
         validation.provider = org.apache.bval.jsr.ApacheValidationProvider
 
@@ -40,8 +44,8 @@
         # note: this config just drop ValidationProvider from this list
         #
         openejb.classloader.filterable-resources = \
-          META-INF/services/javax.ws.rs.client.ClientBuilder,\
-          META-INF/services/javax.json.spi.JsonProvider,\
+          META-INF/services/jakarta.ws.rs.client.ClientBuilder,\
+          META-INF/services/jakarta.json.spi.JsonProvider,\
           META-INF/services/javax.cache.spi.CachingProvider,\
           META-INF/javamail.default.providers,META-INF/javamail.default.address.map,\
           META-INF/javamail.charset.map,META-INF/mailcap,\
