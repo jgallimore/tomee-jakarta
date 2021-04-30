@@ -31,12 +31,12 @@
       <groupId>jakarta.platform</groupId>
       <artifactId>jakarta.jakartaee-api</artifactId>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>openejb-core</artifactId>
       <version>${tomee.version}</version>
       <scope>test</scope>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
@@ -54,8 +54,9 @@
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>arquillian-openejb-embedded</artifactId>
-      <version>${tomee.version}</version>
+      <artifactId>arquillian-tomee-embedded</artifactId>
+      <version>${project.version}</version>
+      <classifier>transformed</classifier>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -87,8 +88,8 @@
     </dependency>
     <dependency>
       <groupId>org.jboss.arquillian.protocol</groupId>
-      <artifactId>arquillian-protocol-servlet</artifactId>
-      <version>${version.arquillian}</version>
+      <artifactId>arquillian-protocol-servlet-jakarta</artifactId>
+      <version>1.7.0.Alpha9</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
